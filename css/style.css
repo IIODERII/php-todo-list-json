@@ -1,0 +1,29 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+header img {
+    width: 300px;
+}
+
+.done {
+    text-decoration: line-through;
+}
+
+ul li span,
+ul li i {
+    cursor: pointer;
+}
+
+
+body {
+    background-image: url('https://i.pinimg.com/originals/7f/66/4f/7f664f83ecae1bbe1f82092c159f43e4.jpg');
+}
+
+@media screen and (max-width: 576px) {
+    header img {
+        width: 75%;
+    }
+}
