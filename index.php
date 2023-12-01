@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.2/axios.min.js"
+        integrity="sha512-b94Z6431JyXY14iSXwgzeZurHHRNkLt9d6bAHt7BZT38eqV+GyngIi/tVye4jBKPYQ2lBdRs0glww4fmpuLRwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
@@ -39,8 +42,8 @@
 
                     <li class="list-group-item list-group-item-action d-flex justify-content-between bg-dark text-white"
                         v-for="(todo,index) in filteredTasks" :key="todo.id">
-                        <span :class="{'done': todo.done}" @click="toggleDone(todo.id)">{{todo.text}}</span>
-                        <i class="fa-solid fa-trash" @click="removeTask(todo.id)"></i>
+                        <span :class="{'done': todo.done}" @click="toggleDone(index)">{{todo.text}}</span>
+                        <i class="fa-solid fa-trash" @click="deleteTask(index)"></i>
                     </li>
 
                 </ul>

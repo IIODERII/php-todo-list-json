@@ -1,14 +1,1 @@
-[
-    {
-      "text": "Prendere il rum",
-      "done": false
-    },
-    {
-      "text": "Aggiustare la nave",
-      "done": true
-    },
-    {
-      "text": "Comprare (rubare) le provviste",
-      "done": false
-    }
-  ]
+[{"text":"Prendere il rum","done":false},{"text":"Aggiustare la nave","done":true},{"text":"Comprare (rubare) le provviste","done":false}]
